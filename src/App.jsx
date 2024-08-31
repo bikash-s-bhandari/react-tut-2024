@@ -6,7 +6,8 @@ import Footer from "./components/layout/Footer";
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
-import PostList from './pages/Post';
+import PostList from './pages/post/Post';
+import PostDetail from './pages/post/PostDetail';
 import Documentation from "./pages/Documentation";
 import Dashboard from './pages/dashboard';
 import Profile from './components/dashboard/Profile';
@@ -26,6 +27,8 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="about" element={ <About/> } />
         <Route path="/posts" element={ <PostList/> } />
+        <Route path="/posts/:id" element={ <PostDetail/> } />
+        <Route path="/posts/:id/:slug" element={ <PostDetail/> } />
         <Route path="/docs" element={ <Documentation/> } />
 
          {/* Parent Route for Nested Routing */}
