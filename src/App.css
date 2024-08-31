@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Basic styling for the navigation bar */
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the active link */
+nav a.active {
+  background-color: #007bff;
+}
+
+/* Change the background color on hover */
+nav a:hover {
+  background-color: #555;
+}
+
+
