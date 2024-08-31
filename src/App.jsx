@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import PostList from './pages/Post';
 import Documentation from "./pages/Documentation";
+import NotFound from "./pages/NotFound";
 
 function App() {
   
@@ -23,6 +24,8 @@ function App() {
         <Route path="about" element={ <About/> } />
         <Route path="/posts" element={ <PostList/> } />
         <Route path="/docs" element={ <Documentation/> } />
+
+        <Route path="*" element={<NotFound/>} />
          
         </Routes>
       </div>
